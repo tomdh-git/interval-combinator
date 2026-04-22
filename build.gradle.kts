@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.tomdh-git"
-version = "main-SNAPSHOT"
+version = project.findProperty("version") ?: "main-SNAPSHOT"
 
 repositories {
     mavenCentral()
